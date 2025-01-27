@@ -127,21 +127,21 @@ exports.signUp = async(req, res) => {
 
 //logout api
 
-exports.logout = async(req, res) => {
-    try{
-        const {email} = req.body;
-        //Validation
-        if(!email){
-            console.log("No email find in delete api.");
-        }
+// exports.logout = async(req, res) => {
+//     try{
+//         const {email} = req.body;
+//         //Validation
+//         if(!email){
+//             console.log("No email find in delete api.");
+//         }
 
-        const deleteUser = await User.deleteOne({ email });
-        console.log("Delete User email: ", deleteUser);
-    }catch(err){
-        console.log(err);
-        return res.status(500).json({
-            success: false,
-            message: "User logout failed."
-        });
-    }
-}
+//         const deleteUser = await User.deleteOne({ email });
+//         console.log("Delete User email: ", deleteUser);
+//     }catch(err){
+//         console.log(err);
+//         return res.status(500).json({
+//             success: false,
+//             message: "User logout failed."
+//         });
+//     }
+// }
