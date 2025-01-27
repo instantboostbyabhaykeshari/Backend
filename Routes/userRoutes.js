@@ -8,6 +8,6 @@ router.post("/signUp", signUp);
 
 router.get("/profile", getEmailPhoneNumber);
 
-router.delete("/deleteUser", logout);
+// router.delete("/deleteUser", logout);
 
 module.exports = router;
