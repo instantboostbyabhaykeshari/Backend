@@ -125,8 +125,23 @@ exports.signUp = async(req, res) => {
     }
 }
 
-exports.getEmailPhoneNumber = (req, res) => {
-    const email = req.user.email;
-    const phoneNumber = req.user.phoneNumber;
-    console.log(email, phoneNumber);
+//logout api
+
+exports.logout = async(req, res) => {
+    try{
+        const {email} = req.body;
+        //Validation
+        if(!email){
+            console.log("No email find in delete api.");
+        }
+
+        const deleteUser = await User.deleteOne({ email });
+        console.log("Delete User email: ", deleteUser);
+    }catch(err){
+        console.log(err);
+        return res.status(500).json({
+            success: false,
+            message: "User logout failed."
+        });
+    }
 }
