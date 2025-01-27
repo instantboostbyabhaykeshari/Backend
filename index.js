@@ -28,7 +28,9 @@ app.use(
     createParentPath: true, // Automatically create directories if they don't exist
   })
 );
-app.use(cors());
+app.use(cors({
+  origin: "https://client-teal-tau.vercel.app"
+}));
 
 //DataBase connection
 database.connect();
