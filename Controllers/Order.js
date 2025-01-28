@@ -31,3 +31,23 @@ exports.orderStatus = async(req, res) => {
         });
     }
 }
+
+//Get all order
+exports.getAllOrders = async(req, res) => {
+    try{
+        const allOrder = await Order.find();
+        console.log("Getting all orders: ", allOrder);
+
+        return res.status(200).json({
+            success: true,
+            message: "Getting all orders successfully.",
+            allOrder
+        });
+
+    }catch(err){
+        return res.status(500).json({
+            success: false,
+            message: "Something get wrong of getting all orders."
+        });
+    }
+}
