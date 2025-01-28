@@ -35,7 +35,7 @@ exports.orderStatus = async(req, res) => {
 //Get all order
 exports.getAllOrders = async(req, res) => {
     try{
-        const allOrder = await Order.find();
+        const allOrder = await Order.find().populate({path: "user"}).exec();
         console.log("Getting all orders: ", allOrder);
 
         return res.status(200).json({
