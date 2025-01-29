@@ -77,7 +77,7 @@ exports.orderConfirmationEmail = (firstName, foodItemName) => {
                 <a class="cta" href="https://yourrestaurant.com/order-status">Track your Order</a>
             </div>
             <div class="support">If you have any questions or need assistance, please feel free to reach out to us at <a
-                    href="mailto:support@yourrestaurant.com">support@yourrestaurant.com</a>. We're happy to help!</div>
+                    href="mailto:support@foodfunadda.com">support@foodfunadda.com</a>. We're happy to help!</div>
         </div>
     </body>
     

@@ -9,13 +9,13 @@ exports.OTPVerificationEmail = (email, otp) => {
   
   <body>
       <div style="font-family: Arial, sans-serif; font-size: 16px; color: #333; padding: 20px; line-height: 1.5;">
-          <h2 style="text-align: center; color: #FF6B6B;">BiteTasty OTP Verification</h2>
+          <h2 style="text-align: center; color: #4FAF5A;">Food-Fun OTP Verification</h2>
           <p>Hi ${email},</p>
           <p>
-              Thank you for signing up with BiteTasty! Use the one-time password (OTP) below to verify your account:
+              Thank you for signing up with FoodFun! Use the one-time password (OTP) below to verify your account:
           </p>
           <div
-              style="background-color: #f4f4f4; padding: 15px; text-align: center; font-size: 24px; font-weight: bold; color: #FF6B6B; border-radius: 4px; margin: 20px 0;"
+              style="background-color: #f4f4f4; padding: 15px; text-align: center; font-size: 24px; font-weight: bold; color: #4FAF5A; border-radius: 4px; margin: 20px 0;"
           >
               ${otp}
           </div>
@@ -24,7 +24,7 @@ exports.OTPVerificationEmail = (email, otp) => {
               If you didn’t request this, you can safely ignore this email.
           </p>
           <p style="font-size: 14px; color: #777; text-align: center; margin-top: 20px;">
-              © ${new Date().getFullYear()} BiteTasty. All rights reserved.
+              © ${new Date().getFullYear()} FoodFun. All rights reserved.
           </p>
       </div>
   </body>
