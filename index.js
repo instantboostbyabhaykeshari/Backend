@@ -43,6 +43,7 @@ const foodItemRoutes = require("./Routes/foodItemRoutes.js");
 const paymentRoutes = require("./Routes/Payment.js");
 const orderRoutes = require("./Routes/orderRoutes.js");
 const contactRoutes = require("./Routes/ContactRoutes.js");
+const cashOnDeliveryRoutes = require("./Routes/cashOnDelivery.js");
 
 app.use("/api/v1", userRoutes);
 app.use("/api/category", categoryRoutes);
@@ -51,6 +52,7 @@ app.use("/api/v1/payment", paymentRoutes);
 app.use("/api/v1/order", orderRoutes);
 app.use("/api/v1", contactRoutes);
 app.use("/api", reverseGeocodeRoute);
+app.use("api/v1", cashOnDeliveryRoutes);
 
 app.get("/", (req, res) => {
     res.send("Hello, I am BiteTasty.");
