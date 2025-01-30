@@ -79,10 +79,10 @@ exports.verifyOrderPayment = async (req, res) => {
         paymentStatus: "Paid",
         status: "Processing",
         shippingAddress: {
-          street: "123 Foodie Street",
-          city: "Foodville",
-          state: "Tastyland",
-          zipCode: "12345",
+          street: "Ramgarh, Sonebhadra",
+          city: "Ramgarh",
+          state: "Uttar Pradesh",
+          zipCode: "231213",
           country: "India",
         },
       });
