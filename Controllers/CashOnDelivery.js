@@ -1,11 +1,14 @@
 const Order = require("../Models/Order.js");
+const User = require("../Models/User.js");
+
 
 
 exports.cashOnDelivery = async(req, res) => {
     try{
+      console.log("hello phle hi aa gya error")
         const {foodItems, totalAmount} = req.body;
 
-        //Validations 
+        //Validations
         if(!foodItems || !totalAmount) {
             return res.status(401).json({
                 success: false,

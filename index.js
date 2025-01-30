@@ -52,7 +52,7 @@ app.use("/api/v1/payment", paymentRoutes);
 app.use("/api/v1/order", orderRoutes);
 app.use("/api/v1", contactRoutes);
 app.use("/api", reverseGeocodeRoute);
-app.use("api/v1", cashOnDeliveryRoutes);
+app.use("/api/v1", cashOnDeliveryRoutes);
 
 app.get("/", (req, res) => {
     res.send("Hello, I am BiteTasty.");
