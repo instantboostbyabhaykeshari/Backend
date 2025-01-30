@@ -28,7 +28,7 @@ exports.cashOnDelivery = async(req, res) => {
         })),
 
         totalAmount,
-        paymentMethod: "Cash On Delivery",
+        paymentMethod: "Cash on Delivery",
         paymentStatus: "Unpaid",
         status: "Processing",
         shippingAddress: {
