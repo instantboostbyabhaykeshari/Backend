@@ -30,7 +30,7 @@ app.use(
   })
 );
 app.use(cors({
-  origin: "https://client-teal-tau.vercel.app"
+  origin: "https://foodfunstore.vercel.app"
 }));
 
 //DataBase connection
